@@ -8,17 +8,26 @@
   
   <title>Frontend Mentor | News homepage</title>
   <link rel="stylesheet" href="style.css">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <nav>
     <div class="image">
       <img src="./assets/images/logo.svg" alt="">
+    </div>
+    <div class="mobile_nav">
+      <img src="./assets/images/icon-menu.svg" alt="" onclick="showNav()">
+    </div>
+    <div class="nav_bar" id="mobileView">
+      <ul>
+        <li class="image">
+          <img src="./assets/images/icon-menu-close.svg" alt="" onclick="hideNav()">
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul> 
     </div>
     <ul>
       <li><a href="#">Home</a></li>
@@ -86,9 +95,7 @@
     </div>  
   
   </main>
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+  <script src="index.js"></script>
+
 </body>
 </html>
